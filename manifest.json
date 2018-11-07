@@ -1,0 +1,18 @@
+{
+  "vendor": "vtex",
+  "name": "react-use-svg",
+  "version": "2.0.3",
+  "title": "VTEX react-use-svg",
+  "description": "React component for encapsule the way to renderize svg in HTML",
+  "builders": {
+    "react": "2.x"
+  },
+  "scripts": {
+    "prereleasy": "npm run symlinks",
+    "postreleasy": "vtex publish --verbose"
+  },
+  "mustUpdateAt": "2019-08-09",
+  "categories": [],
+  "registries": [],
+  "settingsSchema": {}
+}
