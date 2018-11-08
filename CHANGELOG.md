@@ -7,4 +7,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 - Basic project structure.
-- Component is working, missing unit tests.
+- Component working.
+- Component Tested.
