@@ -1,16 +1,14 @@
 {
   "name": "@vtex/react-use-svg",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "React component that encapsules the rendering of SVGs in HTML",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
   "scripts": {
-    "build": "npm run symlinks && nwb build-react-component --no-demo && npm run removeMocks && npm run addLocales",
+    "build": "npm run symlinks && nwb build-react-component --no-demo",
     "build:link": "npm link && watch 'npm run build' src",
-    "removeMocks": "rm -rf lib/**/__mocks__ && rm -rf lib/__mocks__",
-    "addLocales": "cp -R -f src/locales/ lib/locales/",
     "clean": "nwb clean-module && nwb clean-demo",
     "start": "npm run symlinks && nwb serve-react-demo",
     "symlinks": "rm -rf src && ln -sf react src && ln -sf ../package.json react/package.json",

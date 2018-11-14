@@ -1,12 +1,12 @@
 import React from 'react';
-import UseSvg from '../UseSvg';
+import Use from '../Use';
 import { shallow } from 'enzyme';
 
 describe('ReactUseSvg', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow( <UseSvg id="id" x="20" y="50" /> );
+    wrapper = shallow( <Use id="id" x="20" y="50" /> );
   });
 
   it('should render its children', () => {

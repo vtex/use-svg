@@ -1,5 +1,5 @@
 import React from 'react';
-import Use from '../../react/UseSvg';
+import Use from '../../react/Use';
 
 const App = () =>  (
   <svg height="300px" width="100%" viewBox="0 0 205 205" version="1.1" xmlns="http://www.w3.org/2000/svg">
