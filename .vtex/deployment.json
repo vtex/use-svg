@@ -1,8 +1,8 @@
 [
   {
-    "name": "profile-form",
+    "name": "react-use-svg",
     "description": "",
-    "source": "https://github.com/vtex/profile-form.git",
+    "source": "https://github.com/vtex/react-use-svg.git",
     "script": {
       "deploy": ".vtex/deploy.yml",
       "ci": ".vtex/ci.yml"
@@ -23,15 +23,15 @@
     "tags": [
       {
         "key": "Product",
-        "value": "profile-form"
+        "value": "react-use-svg"
       },
       {
         "key": "Owner",
-        "value": "Post Purchase XP"
+        "value": "Developer XP"
       },
       {
         "key": "Team",
-        "value": "Post Purchase XP"
+        "value": "Developer XP"
       }
     ]
   }
