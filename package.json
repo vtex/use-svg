@@ -1,5 +1,5 @@
 {
-  "name": "@vtex/react-use-svg",
+  "name": "@vtex/vtex-use-svg",
   "version": "0.1.0",
   "description": "React component that encapsules the rendering of SVGs in HTML",
   "main": "react/Use.js",
@@ -18,9 +18,9 @@
     "vtex:link": "npm run symlinks && vtex link",
     "prepublishOnly": "npm run build"
   },
-  "repository": "https://github.com/vtex/react-use-svg",
+  "repository": "https://github.com/vtex/vtex-use-svg",
   "author": "Matheus P. Silva (@matheusps)",
-  "homepage": "https://github.com/vtex/react-use-svg",
+  "homepage": "https://github.com/vtex/vtex-use-svg",
   "keywords": [
     "react-component",
     "vtex",
