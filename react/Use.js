@@ -1,12 +1,12 @@
-import React from 'react';
-import { string } from 'prop-types';
+import React from 'react'
+import { string } from 'prop-types'
 
-const Use = ({id, ...props}) => (
+const Use = ({ id, ...props }) => (
   <use href={`#${id}`} xlinkHref={`#${id}`} {...props} />
-);
+)
 
 Use.propTypes = {
-  id: string.isRequired
+  id: string.isRequired,
 }
 
-export default Use;
+export default Use
