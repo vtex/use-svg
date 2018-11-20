@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.2.0] - 2018-11-20
+### Added
+- Svg component to wrap svg tags.
+- Svg component tests.
+### Changed
+- Name of Use test describe.
+
 ## [0.1.1] - 2018-11-16
 
 ## [0.1.0] - 2018-11-16

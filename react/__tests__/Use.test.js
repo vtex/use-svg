@@ -2,7 +2,7 @@ import React from 'react';
 import Use from '../Use';
 import { shallow } from 'enzyme';
 
-describe('ReactUseSvg', () => {
+describe('Use', () => {
   let wrapper;
 
   beforeEach(() => {
