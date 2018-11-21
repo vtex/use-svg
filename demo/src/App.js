@@ -1,21 +1,81 @@
-import React from 'react';
-import Use from '../../react/Use';
-import Svg from '../../react/Svg';
+import React, { Component, Fragment } from 'react'
+import 'vtex-tachyons'
+import Svg from '../../react/Svg'
+import Icon from '../../react/Icon'
 
-const App = () =>  (
-  <Svg height="300px" width="100%" viewBox="0 0 205 205">
-      
-    <g id="vtex-logo" transform="translate(48.000000, 47.000000)">
-        <path d="M118.77,0.32 L23.05,0.32 C19.5863153,0.351666779 16.3889012,2.1841531 14.6106802,5.15670157 C12.8324593,8.12925004 12.7299064,11.8131266 14.34,14.88 L23.92,33.12 L6.56,33.12 C4.34212938,33.0796434 2.26852073,34.2160272 1.10916104,36.1071813 C-0.050198645,37.9983354 -0.122159306,40.3618165 0.92,42.32 L31.72,100.52 C32.82523,102.610084 34.9956855,103.917585 37.36,103.917585 C39.7243145,103.917585 41.89477,102.610084 43,100.52 L51.36,84.75 L61.86,104.61 C63.5672111,107.834206 66.9167025,109.850719 70.565,109.850719 C74.2132975,109.850719 77.5627889,107.834206 79.27,104.61 L127.27,14.36 C128.859296,11.3894263 128.76395,7.80084814 127.019155,4.91885888 C125.274361,2.03686962 122.138857,0.288843161 118.77,0.32 L118.77,0.32 Z M76,38.45 L55,77.83 C54.2785005,79.1902007 52.8647101,80.0406475 51.325,80.0406475 C49.7852899,80.0406475 48.3714995,79.1902007 47.65,77.83 L26.92,38.83 C26.2804208,37.6297958 26.3177694,36.18196 27.018378,35.0163274 C27.7189867,33.8506948 28.9800187,33.1383594 30.34,33.14 L72.76,33.14 C74.0381403,33.1203257 75.2313827,33.778051 75.8971997,34.869251 C76.5630167,35.9604511 76.6021171,37.3223986 76,38.45 Z" id="Shape"></path>
-    </g>
+class App extends Component {
 
-    <Use id="vtex-logo" x="-260" fill="#FF851B" />
-    <Use id="vtex-logo" x="-130" fill="#001F3F" />
-    <Use id="vtex-logo" fill="#FF3366" />
-    <Use id="vtex-logo" x="130" fill="white" stroke="#FF3366" />
-    <Use id="vtex-logo" x="260" fill="white" stroke="#B10DC9" />
+  constructor(props) {
+    super(props);
+    this.state = {
+      isActive: false,
+      size: 200
+    }
+    this.toogle = this.toogle.bind(this);
+  }
 
-  </Svg>
-)
+  toogle () {
+    this.setState({
+      isActive: !this.state.isActive
+    })
+  }
 
-export default App;
+  render () {
+
+    const defs = (
+      <Svg width='0' height='0' style={{display: 'none'}}>
+        <defs>
+
+          <g id="grid">
+            <rect width="6.73684" height="7" fill="currentColor" />
+            <rect x="9.2627" width="6.73684" height="7" fill="currentColor" />
+            <rect width="6.73684" height="1" transform="matrix(1 0 0 -1 9.2627 9)" fill="currentColor" />
+            <rect width="6.73684" height="1" transform="matrix(1 0 0 -1 0 9)" fill="currentColor" />
+            <rect y="10" width="6.73684" height="7" fill="currentColor" />
+            <rect x="9.2627" y="10" width="6.73684" height="7" fill="currentColor" />
+            <rect width="6.73684" height="1" transform="matrix(1 0 0 -1 9.2627 19)" fill="currentColor" />
+            <rect width="6.73684" height="1" transform="matrix(1 0 0 -1 0 19)" fill="currentColor" />
+          </g>
+  
+          <g id="eyesight-enable" transform="translate(0, 0)">
+            <path
+              fill="currentColor"
+              d="M8,14c3.6,0,6.4-3.1,7.6-4.9c0.5-0.7,0.5-1.6,0-2.3C14.4,5.1,11.6,2,8,2C4.4,2,1.6,5.1,0.4,6.9c-0.5,0.7-0.5,1.6,0,2.2C1.6,10.9,4.4,14,8,14z M8,5c1.7,0,3,1.3,3,3s-1.3,3-3,3S5,9.7,5,8S6.3,5,8,5z"
+            />
+          </g>
+
+          <g id="single-item-grid">
+            <rect width="10" height="14" fill="currentColor" />
+            <rect y="16" width="10" height="3" fill="currentColor" />
+          </g>
+
+        </defs>
+      </Svg>
+    )
+
+    return (
+      <Fragment>
+  
+        { defs }
+
+        <a 
+          className="f3 link ph4 pv4 dib white bg-rebel-pink pointer absolute top-0 right-0"
+          onClick={ this.toogle }
+        >
+          Toggle State
+        </a>
+
+        <div className="flex center justify-around w-80 pv6">
+          <Icon id="grid" isActive={this.state.isActive} size={this.state.size} viewBox="0 0 16 19" activeClassName="yellow" muttedClassName="washed-yellow" />
+          <Icon id="eyesight-enable" isActive={this.state.isActive} size={this.state.size} viewBox="0 0 16 16" />
+          <Icon id="single-item-grid" isActive={this.state.isActive} size={this.state.size} viewBox="0 0 10 19" activeClassName="green" muttedClassName="washed-green" />
+        </div>
+  
+      </Fragment>
+    )
+
+  }
+  
+}
+
+export default App
