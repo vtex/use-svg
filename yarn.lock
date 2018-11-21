@@ -10164,6 +10164,11 @@ void-elements@^2.0.0:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
   integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
+vtex-tachyons@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/vtex-tachyons/-/vtex-tachyons-2.9.0.tgz#e52e19bb14f02af33118320f31f4a5a62ac3b6d4"
+  integrity sha512-MQLDm5KrHXpu3CRGoYtYqgIL4zrM8li1S8Z/DhMs6nb98cAEsLC/rNNuJvfCHQERlhV32mcBVUUNCKfLbl97ww==
+
 w3c-hr-time@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/w3c-hr-time/-/w3c-hr-time-1.0.1.tgz#82ac2bff63d950ea9e3189a58a65625fedf19045"
