@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.3.0] - 2018-11-21
+### Added
+- Icon component.
+- Icon component tests.
+### Changed
+- Demo.
+
 ## [0.2.0] - 2018-11-20
 ### Added
 - Svg component to wrap svg tags.

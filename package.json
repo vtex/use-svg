@@ -1,6 +1,6 @@
 {
   "name": "@vtex/vtex-use-svg",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "React component that encapsules the rendering of SVGs in HTML",
   "main": "react/Use.js",
   "files": [
@@ -59,7 +59,8 @@
   },
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.4.1"
+    "react": "^16.4.1",
+    "vtex-tachyons": "^2.9.0"
   },
   "devDependencies": {
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -73,5 +74,7 @@
     "react-hot-loader": "^4.3.4",
     "react-test-renderer": "^16.4.1"
   },
-  "peerDependencies": {}
+  "peerDependencies": {
+    "vtex-tachyons": "^2.9.0"
+  }
 }
