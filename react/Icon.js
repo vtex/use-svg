@@ -18,8 +18,8 @@ const Icon = ({ id, isActive, size, viewBox, activeClassName, muttedClassName, .
 
 Icon.defaultProps = {
   isActive: true,
-  size: '20',
-  viewBox: '0 0 20 20',
+  size: '16',
+  viewBox: '0 0 16 16',
   activeClassName: 'mid-gray',
   muttedClassName: 'light-gray',
 }
