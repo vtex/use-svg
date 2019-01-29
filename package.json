@@ -1,6 +1,6 @@
 {
   "name": "@vtex/vtex-use-svg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component that encapsules the rendering of SVGs in HTML",
   "main": "react/Use.js",
   "files": [
